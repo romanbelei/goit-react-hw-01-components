@@ -19,9 +19,9 @@ th {
   padding: 10px 20px;
 }
 
-td:first-child {
-  background: #afcde7;
-  color: white;
+td {
+  /* background: #afcde7;
+  color: white; */
   padding: 10px 20px;
 }
 
@@ -31,10 +31,18 @@ td {
   border-width: 0 1px 1px 0;
   border-color: white;
 }
-td {
+/* td {
   background: #d8e6f3;
-}
-th:first-child,
+} */
+/* th:first-child,
 td:first-child {
   text-align: left;
+} */
+
+tr:nth-child(odd) {
+  background: #edf2f7;
+}
+tr:nth-child(even) {
+  /* background: #e8e6d1; */
+  background: #d8e6f3;
 }
