@@ -1,7 +1,7 @@
-import Profile from './Profile.jsx';
-import Statistics from './Statistics.jsx';
-import FriendList from './FriendList.jsx';
-import TransactionHistory from './TransactionHistory.jsx';
+import Profile from './Profile/Profile.jsx';
+import Statistics from './Statistics/Statistics.jsx';
+import FriendList from './FriendList/FriendList.jsx';
+import TransactionHistory from './TransactionHistory/TransactionHistory.jsx';
 import user from '../user.json';
 import data from '../data.json';
 import friends from '../friends.json';
@@ -27,10 +27,10 @@ export const App = () => {
   avatar={user.avatar}
   stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={data} />;
-      <Statistics stats={data} />;
-      <FriendList friends={friends} />,
-      <TransactionHistory items={transactions} />;
+      <Statistics title="Upload stats" stats={data} />
+      <Statistics stats={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
     
 

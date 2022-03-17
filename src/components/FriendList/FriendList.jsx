@@ -5,13 +5,12 @@ function FriendList({ friends }) {
     return (
         <ul>
             {friends.map(friend => (
-                <li key={friend.id}>
                     <FriendListItem 
+                        key={friend.id}
                         avatar={friend.avatar}
                         name={friend.name}
                         isOnline={friend.isOnline}
                     />
-                </li>
             )
             )} 
         </ul>
@@ -24,7 +23,7 @@ FriendList.propTypes = {
     PropTypes.shape({
             avatar: PropTypes.string.isRequired,
             name: PropTypes.string.isRequired,
-            isonline: PropTypes.bool.isRequired,
+            isOnline: PropTypes.bool.isRequired,
             id: PropTypes.number.isRequired,
         }),
 ),

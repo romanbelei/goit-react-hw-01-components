@@ -1,4 +1,7 @@
+import s from "./Profile.module.css";
 import PropTypes from "prop-types";
+
+// console.log(s.description);
 
 const Profile = ({
     username,
@@ -8,31 +11,31 @@ const Profile = ({
     stats,
 }) => {
     return (
-        <div class="profile">
-            <div class="description">
+        <div className={s.profile}>
+            <div className={s.description}>
                 <img
                     src={avatar}
                     alt="User avatar"
-                    class="avatar"
+                    className={s.avatar}
                 />
-                <p class="name">{username}</p>
-                <p class="tag">{tag}</p>
-                <p class="location">{location}</p>
+                <p className={s.name}>{username}</p>
+                <p className={s.tag}>{tag}</p>
+                <p className={s.location}>{location}</p>
             </div>
 
-            <ul class="stats">
+            <ul className={s.stats}>
                 <li>
-                    <span class="label">Followers</span>
-                    <span class="quantity">   {stats.followers}</span>
+                    <span className={s.label}>Followers</span>
+                    <span className={s.quantity}>{stats.followers}</span>
                 </li>
                 <li>
-                    <span class="label">Views</span>
-                    <span class="quantity">  {stats.views}</span>
+                    <span className={s.label}>Views</span>
+                    <span className={s.quantity}>{stats.views}</span>
 
                 </li>
                 <li>
-                    <span class="label">Likes</span>
-                    <span class="quantity">  {stats.likes}</span>
+                    <span className={s.label}>Likes</span>
+                    <span className={s.quantity}>{stats.likes}</span>
                 </li>
             </ul>
         </div>
